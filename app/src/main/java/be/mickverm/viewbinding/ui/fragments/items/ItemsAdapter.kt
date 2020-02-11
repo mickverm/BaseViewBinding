@@ -19,9 +19,7 @@ class ItemsAdapter(
 
     override fun getItemCount(): Int = values.size
 
-    class ViewHolder(
-        private val binding: ItemDummyItemBinding
-    ) : BaseViewHolder<ItemDummyItemBinding>(binding) {
+    class ViewHolder(private val binding: ItemDummyItemBinding) : BaseViewHolder(binding) {
 
         fun bind(item: DummyItem) {
             binding.itemNumber.text = item.id
