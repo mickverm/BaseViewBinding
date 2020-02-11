@@ -49,9 +49,7 @@ class ItemsAdapter : BaseAdapter<ItemsAdapter.ViewHolder>() {
 	
     ...
 	
-    class ViewHolder(
-        private val binding: ItemItemBinding
-    ) : BaseViewHolder<ItemItemBinding>(binding) {
+    class ViewHolder(private val binding: ItemItemBinding) : BaseViewHolder(binding) {
 
         fun bind(item: DummyItem) {
             binding.tvContent = item.content
